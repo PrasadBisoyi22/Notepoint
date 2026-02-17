@@ -1,0 +1,134 @@
+{
+  "id": "java-fundamentals",
+  "title": "Java Fundamentals – Running Notes",
+  "sections": [
+    {
+      "id": "introduction-to-java",
+      "title": "1. Introduction to Java",
+      "subsections": [
+        {
+          "id": "java-programming-language",
+          "title": "1.1 Java Programming Language",
+          "content": [
+            {
+              "type": "definition",
+              "term": "Programming Language",
+              "value": "A language used to write programs or code; a set of instructions given to a computer to perform a particular task."
+            },
+            {
+              "type": "definition",
+              "term": "Java",
+              "value": "A high-level, object-oriented programming language designed for platform independence."
+            },
+            {
+              "type": "text",
+              "value": "The Java program we write is known as source code (e.g., .java files), which our system cannot directly understand."
+            }
+          ]
+        },
+        {
+          "id": "java-compilation-process",
+          "title": "1.2 Java Compilation and Execution Process",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "To overcome platform dependency, Java uses two key components: Compiler and JVM (Java Virtual Machine).",
+                "Compiler (javac) checks the syntax of the Java program and generates bytecode (or .class file).",
+                "JVM understands the bytecode and converts it into binary or machine-level language specific to the host system."
+              ]
+            },
+            {
+              "type": "ordered-list",
+              "items": [
+                "Write source code (.java file).",
+                "Compiler translates source code to bytecode (.class file).",
+                "JVM loads, verifies, and executes bytecode on any platform."
+              ]
+            },
+            {
+              "type": "text",
+              "value": "This 'write once, run anywhere' model makes Java portable across operating systems like Windows, Linux, and macOS."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "key-java-components",
+      "title": "2. Key Components: Compiler and JVM",
+      "subsections": [
+        {
+          "id": "compiler-role",
+          "title": "2.1 Role of the Compiler",
+          "content": [
+            {
+              "type": "definition",
+              "term": "Compiler",
+              "value": "javac tool that performs syntax checking and compiles human-readable Java source code into platform-independent bytecode."
+            },
+            {
+              "type": "bullet",
+              "items": [
+                "Detects syntax errors before runtime.",
+                "Generates intermediate bytecode (.class files).",
+                "Does not execute the code; only translates it."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jvm-role",
+          "title": "2.2 Role of JVM (Java Virtual Machine)",
+          "content": [
+            {
+              "type": "definition",
+              "term": "JVM",
+              "value": "An abstract computing machine that enables Java bytecode to run on any device with a JVM implementation."
+            },
+            {
+              "type": "bullet",
+              "items": [
+                "Loads bytecode via Class Loader subsystem.",
+                "Verifies bytecode for security and correctness.",
+                "Executes bytecode using Interpreter and JIT Compiler.",
+                "Manages memory (heap, garbage collection), threads, and security."
+              ]
+            },
+            {
+              "type": "diagram",
+              "value": "Source Code (.java) -> Compiler (javac) -> Bytecode (.class) -> JVM -> Machine Code (Binary)"
+            }
+          ]
+        },
+        {
+          "id": "why-two-steps",
+          "title": "2.3 Why Compiler + JVM?",
+          "content": [
+            {
+              "type": "comparison",
+              "items": [
+                {
+                  "title": "Direct Compilation (e.g., C++)",
+                  "points": [
+                    "Compiles to machine-specific binary.",
+                    "Non-portable across platforms.",
+                    "Faster startup but recompilation needed per OS."
+                  ]
+                },
+                {
+                  "title": "Java Approach",
+                  "points": [
+                    "Compiles to intermediate bytecode once.",
+                    "JVM handles platform-specific execution.",
+                    "Portable; 'Write Once, Run Anywhere'."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
