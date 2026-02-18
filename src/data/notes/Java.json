@@ -129,6 +129,835 @@
           ]
         }
       ]
+    },
+    
+    {
+      "id": "introduction-to-ide",
+      "title": "3. Introduction to IDE and Editors",
+      "subsections": [
+        {
+          "id": "ide-definition",
+          "title": "3.1 What is an IDE?",
+          "content": [
+            {
+              "type": "definition",
+              "term": "IDE (Integrated Development Environment)",
+              "value": "A comprehensive platform where programs are written, compiled, debugged, and executed."
+            },
+            {
+              "type": "text",
+              "value": "Combines multiple tools (editor, compiler, debugger, terminal) into a single interface for efficient development."
+            },
+            {
+              "type": "bullet",
+              "items": [
+                "Supports code writing, building, testing, and deployment.",
+                "Provides syntax highlighting, auto-completion, and error detection.",
+                "Ideal for complex projects with multiple files and dependencies."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "editors-vs-ide",
+          "title": "3.2 Text Editors vs IDEs",
+          "content": [
+            {
+              "type": "comparison",
+              "items": [
+                {
+                  "title": "Text Editors",
+                  "points": [
+                    "Lightweight tools for basic code editing.",
+                    "Examples: Notepad, Notepad++, EditPlus.",
+                    "Fast startup, minimal features, manual compilation."
+                  ]
+                },
+                {
+                  "title": "IDEs",
+                  "points": [
+                    "Full-featured development environments.",
+                    "Examples: Eclipse, MyEclipse, VS Code, IntelliJ, NetBeans, Sublime Text.",
+                    "Integrated compiler, debugger, project management."
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": "Editors suit quick scripts; IDEs excel in professional Java development."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "popular-java-tools",
+      "title": "4. Popular Java Development Tools",
+      "subsections": [
+        {
+          "id": "simple-editors",
+          "title": "4.1 Simple Text Editors",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "Notepad: Basic Windows text editor; no syntax highlighting.",
+                "Notepad++: Advanced editor with syntax highlighting, plugins, multi-tab support.",
+                "EditPlus: Lightweight with FTP, syntax coloring, macro recording."
+              ]
+            },
+            {
+              "type": "text",
+              "value": "Best for beginners learning syntax or editing small files."
+            }
+          ]
+        },
+        {
+          "id": "java-ides",
+          "title": "4.2 Java IDEs",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "Eclipse: Free, open-source; excellent for Java enterprise development.",
+                "MyEclipse: Eclipse-based with added enterprise features (paid).",
+                "VS Code: Lightweight, extensible via plugins; popular for modern Java.",
+                "IntelliJ IDEA: Powerful, intelligent code assistance (Community/Ultimate).",
+                "NetBeans: Official Oracle IDE; strong GUI builder support.",
+                "Sublime Text: Fast editor with IDE-like plugins via Package Control."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "selection-guide",
+          "title": "4.3 Choosing the Right Tool",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "Beginners: VS Code or Eclipse (free, feature-rich).",
+                "Enterprise: IntelliJ Ultimate or MyEclipse.",
+                "Speed-focused: Sublime Text or Notepad++.",
+                "Oracle projects: NetBeans."
+              ]
+            },
+            {
+              "type": "text",
+              "value": "Most IDEs support Java via JDK integration and Maven/Gradle build tools."
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "java-program-structure",
+      "title": "5. Basic Structure of Java Program",
+      "subsections": [
+        {
+          "id": "class-concept",
+          "title": "5.1 Class: The House Boundary",
+          "content": [
+            {
+              "type": "definition",
+              "term": "Class",
+              "value": "Like a house boundary – defines where Java code exists and organizes everything within it."
+            },
+            {
+              "type": "analogy",
+              "items": [
+                { "label": "House", "value": "Class" },
+                { "label": "Boundary/Walls", "value": "Where Java code exists and is contained" },
+                { "label": "Everything inside", "value": "Methods, variables, and program logic" }
+              ]
+            },
+            {
+              "type": "text",
+              "value": "Every Java program must be inside a class. File name must match class name (e.g., MyClass.java)."
+            }
+          ]
+        },
+        {
+          "id": "method-concept",
+          "title": "5.2 Method: The Rooms",
+          "content": [
+            {
+              "type": "definition",
+              "term": "Method",
+              "value": "Like rooms in a house – specific places where operations and actions are performed."
+            },
+            {
+              "type": "bullet",
+              "items": [
+                "Contains the actual code that executes.",
+                "main() method is the entry point where program starts.",
+                "Signature: public static void main(String[] args)"
+              ]
+            },
+            {
+              "type": "text",
+              "value": "Think of methods as different rooms with specific purposes (living room, kitchen, bedroom)."
+            }
+          ]
+        },
+        {
+          "id": "variable-concept",
+          "title": "5.3 Variables: The Cupboards",
+          "content": [
+            {
+              "type": "definition",
+              "term": "Variable",
+              "value": "Like cupboards in a house – used to store data (objects, values) that the program uses."
+            },
+            {
+              "type": "bullet",
+              "items": [
+                "Store data temporarily during program execution.",
+                "Examples: int age = 25; String name = \"John\";",
+                "Declared inside class or methods."
+              ]
+            },
+            {
+              "type": "analogy",
+              "items": [
+                { "label": "Cupboard", "value": "Variable" },
+                { "label": "Stored items", "value": "Data values/objects" },
+                { "label": "Accessible anywhere in house", "value": "Accessible throughout class" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "basic-syntax-example",
+      "title": "6. Basic Syntax Example",
+      "subsections": [
+        {
+          "id": "hello-world-structure",
+          "title": "6.1 Hello World Program Structure",
+          "content": [
+            {
+              "type": "diagram",  
+              "value": "public class House {          // Class = House boundary\n  public static void main(String[] args) {  // Method = Room\n      System.out.println(\"Hello World\");   // Operation inside room\n  }\n}"
+            },
+            {
+              "type": "ordered-list",
+              "items": [
+                "Class declaration (House boundary)",
+                "Main method (Main room/entry point)",
+                "Variables declared (Cupboards filled)",
+                "Statements executed (Operations performed)",
+                "Program ends"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "key-syntax-rules",
+          "title": "6.2 Key Syntax Rules",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "Every statement ends with semicolon (;)",
+                "Curly braces {} define blocks (class, method bodies)",
+                "Case-sensitive (Main ≠ main)",
+                "public class name must match filename",
+                "main() method is mandatory entry point"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    
+    {
+      "id": "basic-rules",
+      "title": "7. Java Syntax Rules",
+      "subsections": [
+        {
+          "id": "class-declaration",
+          "title": "7.1 Class Declaration Rules",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "Java programs always start with class keyword.",
+                "Class name should start with uppercase letter (recommended convention).",
+                "Filename must exactly match class name (Demo.java for class Demo)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "main-method",
+          "title": "7.2 Main Method Requirement",
+          "content": [
+            {
+              "type": "definition",
+              "term": "main() method",
+              "value": "Every executable class must contain main() method – execution always starts here."
+            },
+            {
+              "type": "text",
+              "value": "Signature: public static void main(String[] args)"
+            }
+          ]
+        },
+        {
+          "id": "print-statement",
+          "title": "7.3 Print Statement",
+          "content": [
+            {
+              "type": "definition",
+              "term": "System.out.println()",
+              "value": "Used to print any statement/text to console output."
+            },
+            {
+              "type": "bullet",
+              "items": [
+                "Prints text followed by newline.",
+                "Use System.out.print() for same line output."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "syntax-essentials",
+          "title": "7.4 Essential Syntax Rules",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "Every statement must end with semicolon (;).",
+                "Every open curly brace { must have matching closing brace }.",
+                "Case-sensitive: main() ≠ Main()."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sample-program",
+      "title": "8. Complete Example Program",
+      "subsections": [
+        {
+          "id": "demo-code",
+          "title": "8.1 Demo Program",
+          "content": [
+            {
+              "type": "diagram",
+              "value": "class Demo {\n  public static void main (String [] args) {\n    System.out.println (\"Ironman\");\n  }\n}"
+            },
+            {
+              "type": "text",
+              "value": "Note: Correct spelling is main(), not mani()."
+            }
+          ]
+        },
+        {
+          "id": "compile-run",
+          "title": "8.2 Compilation & Execution Commands",
+          "content": [
+            {
+              "type": "ordered-list",
+              "items": [
+                "Save: filename → Demo.java",
+                "Compile: javac filename.java → Ex: javac Demo.java",
+                "Run: java class-name → Ex: java Demo"
+              ]
+            },
+            {
+              "type": "text",
+              "value": "Output: Ironman (printed on console)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "execution-flow",
+      "title": "9. Execution Flow Summary",
+      "subsections": [
+        {
+          "id": "complete-process",
+          "title": "9.1 Step-by-Step Process",
+          "content": [
+            {
+              "type": "ordered-list",
+              "items": [
+                "Write Java source code (.java file).",
+                "Save with class name matching filename.",
+                "Compile: javac Demo.java → Creates Demo.class bytecode.",
+                "Execute: java Demo → JVM runs bytecode."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "complete-workflow",
+      "title": "10. Complete Development Workflow",
+      "subsections": [
+        {
+          "id": "step-by-step-process",
+          "title": "10.1 Step-by-Step Instructions",
+          "content": [
+            {
+              "type": "ordered-list",
+              "items": [
+                "Create a folder to save all Java programs (e.g., C:\\JavaPrograms).",
+                "Open editor (EditPlus) → File → New → Java → write Java program.",
+                "File → Save As → Select folder → filename: Demo.java",
+                "Go to the folder → address bar → type 'cmd' → Enter.",
+                "Compile: javac filename.java → Ex: javac Demo.java",
+                "Run: java classname → Ex: java Demo"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "detailed-breakdown",
+      "title": "11. Detailed Step Breakdown",
+      "subsections": [
+        {
+          "id": "folder-setup",
+          "title": "11.1 Folder Setup",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "Create dedicated folder: e.g., 'MyJavaProjects' on Desktop or C: drive.",
+                "Organizes all .java source files and .class bytecode files.",
+                "Easy navigation for compilation and execution."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "editor-usage",
+          "title": "11.2 Using EditPlus Editor",
+          "content": [
+            {
+              "type": "ordered-list",
+              "items": [
+                "Open EditPlus → File → New → Select Java template.",
+                "Write program: class Demo { public static void main(String[] args) { System.out.println(\"Hello\"); } }",
+                "File → Save As → Browse to your Java folder → Demo.java"
+              ]
+            },
+            {
+              "type": "text",
+              "value": "EditPlus provides Java syntax highlighting and auto-indentation."
+            }
+          ]
+        },
+        {
+          "id": "command-prompt",
+          "title": "11.3 Command Prompt Navigation",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "Navigate to folder containing Demo.java.",
+                "Click address bar → type 'cmd' → Enter (opens command prompt in current directory).",
+                "Alternative: Hold Shift + Right-click folder → 'Open PowerShell/Command window here'."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "compile-execute",
+          "title": "11.4 Compile & Execute Commands",
+          "content": [
+            {
+              "type": "protocol",
+              "name": "Compilation",
+              "details": [
+                "Command: javac Demo.java",
+                "Creates: Demo.class bytecode file",
+                "javac = Java Compiler"
+              ]
+            },
+            {
+              "type": "protocol",
+              "name": "Execution",
+              "details": [
+                "Command: java Demo (no .java extension)",
+                "Runs: JVM executes bytecode",
+                "java = Java Runtime"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "troubleshooting",
+      "title": "12. Common Issues & Solutions",
+      "subsections": [
+        {
+          "id": "error-solutions",
+          "title": "12.1 Typical Beginner Problems",
+          "content": [
+            {
+              "type": "comparison",
+              "items": [
+                {
+                  "title": "'javac is not recognized'",
+                  "points": [
+                    "JDK not installed or PATH not set.",
+                    "Download JDK from Oracle.",
+                    "Add bin folder to Windows PATH."
+                  ]
+                },
+                {
+                  "title": "Compilation errors",
+                  "points": [
+                    "Syntax mistakes (missing ;, braces).",
+                    "Class name ≠ filename.",
+                    "Check error messages carefully."
+                  ]
+                },
+                {
+                  "title": "'Error: could not find or load main class'",
+                  "points": [
+                    "Not in correct directory.",
+                    "Using .java extension when running.",
+                    "java Demo (not java Demo.java)."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "main-method-requirement",
+      "title": "1. Main Method & Compilation",
+      "subsections": [
+        {
+          "id": "compile-without-main",
+          "title": "1.1 Can We Compile Without Main Method?",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "Yes, we can compile a program without main method.",
+                "Compilation succeeds (javac creates .class files).",
+                "Cannot run (java command fails: 'main method not found')."
+              ]
+            },
+            {
+              "type": "text",
+              "value": "Main() required only for execution, not compilation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filename-cases",
+      "title": "2. Filename & Public Class Rules",
+      "subsections": [
+        {
+          "id": "case-1-no-public",
+          "title": "2.1 Case 1: No Public Classes",
+          "content": [
+            {
+              "type": "diagram",
+              "value": "class A {}\nclass B {}\nclass C {}\n// Any filename OK:\nA.java ✓ B.java ✓ C.java ✓ Syama.java ✓"
+            },
+            {
+              "type": "text",
+              "value": "If no class is public, save with ANY filename."
+            }
+          ]
+        },
+        {
+          "id": "case-2-one-public",
+          "title": "2.2 Case 2: One Public Class",
+          "content": [
+            {
+              "type": "diagram",
+              "value": "class A {}\npublic class B {}\nclass C {}\n// ONLY B.java ✓\nA.java ✗ C.java ✗ Syama.java ✗"
+            },
+            {
+              "type": "text",
+              "value": "Public class filename MUST match public class name."
+            }
+          ]
+        },
+        {
+          "id": "case-3-multiple-public",
+          "title": "2.3 Case 3: Multiple Public Classes",
+          "content": [
+            {
+              "type": "diagram",
+              "value": "public class A {}\npublic class B {}  // ERROR!\nclass C {}\n// ALL filenames ✗\nA.java ✗ B.java ✗ C.java ✗ Syama.java ✗"
+            },
+            {
+              "type": "text",
+              "value": "IMPOSSIBLE: Only ONE public class per .java file allowed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rules-summary",
+      "title": "3. Quick Reference Rules",
+      "subsections": [
+        {
+          "id": "filename-guidelines",
+          "title": "3.1 Filename Guidelines",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "0 public classes → Any filename ✓",
+                "1 public class → Must match public class name ✓",
+                "2+ public classes → Compilation ERROR ✗"
+              ]
+            },
+            {
+              "type": "text",
+              "value": "P = Possible ✓ | O = Only specific ✓ | ✗ = Not possible."
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "identifier-basics",
+      "title": "1. What Are Identifiers?",
+      "subsections": [
+        {
+          "id": "definition-examples",
+          "title": "1.1 Definition & Examples",
+          "content": [
+            {
+              "type": "definition",
+              "term": "Identifier",
+              "value": "A name in Java program used for identification purpose – can be class name, method name, or variable name."
+            },
+            {
+              "type": "diagram",
+              "value": "class Test {\n  public static void main(String[] args) {\n    int x = 10;\n    System.out.println(x);\n  }\n}\n\nIdentifiers:\n-  Class: Test, String, System\n-  Method: main(), println()\n-  Variable: x, args, out"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "identifier-rules",
+      "title": "2. Rules for Writing Identifiers",
+      "subsections": [
+        {
+          "id": "allowed-characters",
+          "title": "2.1 Allowed Characters",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "a-z (lowercase)",
+                "A-Z (uppercase)",
+                "0-9 (digits)",
+                "$ (dollar sign)",
+                "_ (underscore)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "no-digit-start",
+          "title": "2.2 Cannot Start with Digit",
+          "content": [
+            {
+              "type": "comparison",
+              "items": [
+                {
+                  "title": "Valid",
+                  "points": ["Bond007 ✓"]
+                },
+                {
+                  "title": "Invalid",
+                  "points": ["007Bond ✗ (starts with digit)"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "case-sensitive",
+          "title": "2.3 Case Sensitive & ASCII Values",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "Java identifiers are case sensitive (ASCII/Unicode based).",
+                "a-z: 97-122",
+                "A-Z: 65-90",
+                "0-9: 48-57"
+              ]
+            },
+            {
+              "type": "diagram",
+              "value": "class Test {\n  public static void main(String[] args) {\n    System.out.println('a'+0);  // 97\n    System.out.println('A'+0);  // 65\n  }\n}"
+            }
+          ]
+        },
+        {
+          "id": "no-keywords",
+          "title": "2.4 No Reserved Keywords",
+          "content": [
+            {
+              "type": "comparison",
+              "items": [
+                {
+                  "title": "Valid",
+                  "points": ["int x = 10; ✓"]
+                },
+                {
+                  "title": "Invalid",
+                  "points": ["int if = 20; ✗ (if is keyword)"]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": "Keywords like if, class, int, public cannot be used as identifiers."
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "data-type-basics",
+      "title": "1. Data Types Fundamentals",
+      "subsections": [
+        {
+          "id": "definition-static-typing",
+          "title": "1.1 Definition & Static vs Dynamic",
+          "content": [
+            {
+              "type": "definition",
+              "term": "Data Type",
+              "value": "Every variable has a type that determines what values it can store."
+            },
+            {
+              "type": "comparison",
+              "items": [
+                {
+                  "title": "Java (Statically Typed)",
+                  "points": [
+                    "Must declare data type: int x = 10;",
+                    "Compiler checks types at compile-time."
+                  ]
+                },
+                {
+                  "title": "Python (Dynamically Typed)",
+                  "points": [
+                    "No type declaration: x = 10",
+                    "Type inferred at runtime."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "primitive-types",
+      "title": "2. Primitive Data Types",
+      "subsections": [
+        {
+          "id": "primitive-details",
+          "title": "2.1 Primitive Types (Store Values)",
+          "content": [
+            {
+              "type": "bullet",
+              "items": [
+                "byte: 1 byte (-128 to 127)",
+                "short: 2 bytes (-32768 to 32767)",
+                "int: 4 bytes (-2,147,483,648 to 2,147,483,647)",
+                "long: 8 bytes (add L suffix: 100L)",
+                "float: 4 bytes (decimal + f: 10.5f)",
+                "double: 8 bytes (decimal: 10.5)",
+                "boolean: 1 bit (true/false)",
+                "char: 2 bytes ('a', Unicode)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "non-primitive-types",
+      "title": "3. Non-Primitive Data Types",
+      "subsections": [
+        {
+          "id": "reference-types",
+          "title": "3.1 Reference Types (Store Objects)",
+          "content": [
+            {
+              "type": "comparison",
+              "items": [
+                {
+                  "title": "Predefined (Java Built-in)",
+                  "points": [
+                    "String: \"Hello\"",
+                    "System: System.out"
+                  ]
+                },
+                {
+                  "title": "User Defined",
+                  "points": [
+                    "class Test {}",
+                    "class Demo {}"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "range-finder",
+      "title": "4. Find Data Type Ranges",
+      "subsections": [
+        {
+          "id": "range-code",
+          "title": "4.1 Range Detection Code",
+          "content": [
+            {
+              "type": "diagram",
+              "value": "class Test {\n  public static void main(String[] args) {\n    System.out.println(Byte.MIN_VALUE + \" to \" + Byte.MAX_VALUE);\n    System.out.println(Short.MIN_VALUE + \" to \" + Short.MAX_VALUE);\n    System.out.println(Integer.MIN_VALUE + \" to \" + Integer.MAX_VALUE);\n    System.out.println (Long.MIN_VALUE + \" to \" + Long.MAX_VALUE);\n    System.out.println (Float.MIN_VALUE + \" to \" + Float.MAX_VALUE);\n    System.out.println (Double.MIN_VALUE + \" to \" + Double.MAX_VALUE);\n  }\n}"
+            },
+            {
+              "type": "text",
+              "value": "Use wrapper class constants: MIN_VALUE, MAX_VALUE."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
+  
+
+
